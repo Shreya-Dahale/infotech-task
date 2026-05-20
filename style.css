@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Roboto',sans-serif;
+  color:#111111;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 80px;
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:black;
+  font-size:14px;
+}
+
+.contact-btn{
+  background:#4f46e5;
+  color:white;
+
+  border:none;
+  padding:12px 22px;
+  border-radius:6px;
+}
+
+/* HERO */
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:50px;
+  padding:80px;
+}
+
+.hero-left{
+  flex:1;
+}
+
+.hero-right{
+  flex:1;
+}
+
+.hero-right img{
+  width:100%;
+}
+
+.hero-left h1{
+  font-size:64px;
+  line-height:85px;
+  margin-bottom:20px;
+}
+
+.hero-left span{
+  color:#4f46e5;
+}
+
+.hero-left p{
+  font-size:18px;
+  line-height:32px;
+  margin-bottom:20px;
+}
+
+.hero-left ul{
+  margin-left:20px;
+  margin-bottom:30px;
+}
+
+.hero-left li{
+  margin-bottom:10px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+}
+
+.primary-btn{
+  background:#4f46e5;
+  color:white;
+
+  border:none;
+  padding:14px 26px;
+  border-radius:6px;
+}
+
+.secondary-btn{
+  background:white;
+
+  border:1px solid #4f46e5;
+  color:#4f46e5;
+
+  padding:14px 26px;
+  border-radius:6px;
+}
+
+/* SECOND SECTION */
+
+.features-section{
+  display:flex;
+  gap:50px;
+
+  padding:80px;
+}
+
+.feature-left{
+  flex:1;
+}
+
+.feature-right{
+  flex:1;
+}
+
+.feature-left img{
+  width:100%;
+}
+
+.feature-right h2{
+  font-size:48px;
+  line-height:70px;
+  margin-bottom:20px;
+}
+
+.feature-right span{
+  color:#4f46e5;
+}
+
+.feature-right p{
+  margin-bottom:20px;
+}
+
+.feature-card{
+  border:1px solid #ddd;
+
+  padding:20px;
+  border-radius:10px;
+
+  margin-bottom:20px;
+}
+
+/* HOVER */
+
+button:hover{
+  cursor:pointer;
+  opacity:0.9;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .navbar{
+    padding:20px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero{
+    flex-direction:column;
+    padding:40px 20px;
+  }
+
+  .hero-left h1{
+    font-size:54px;
+    line-height:75px;
+  }
+
+  .features-section{
+    flex-direction:column;
+    padding:40px 20px;
+  }
+
+  .feature-right h2{
+    font-size:38px;
+    line-height:55px;
+  }
+
+}
